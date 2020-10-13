@@ -1,0 +1,43 @@
+.invite-box {
+  margin-top: 20px;
+  max-width: 490px;
+  min-height: 340px;
+  background-color: $box-color;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  color: $text-color;
+  @media screen and (max-width: 600px) {
+    padding-right: 50px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 18px;
+    max-width: 312px;
+    margin-bottom: 60px;
+    margin-top: 25px;
+  }
+  button {
+    max-width: 223px;
+    font-size: 18px;
+    height: 67px;
+    color: #fff;
+    background-color: #202842;
+    padding-left: 30px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-right: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      background-color: #2e395e;
+    }
+    @media screen and (max-width: 320px) {
+      max-width: 140px;
+    }
+  }
+}

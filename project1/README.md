@@ -1,4 +1,4 @@
-# FOOTER (SCSS)
+# CARDS (SCSS)
 
 ## About The Project
 

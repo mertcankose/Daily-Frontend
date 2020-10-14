@@ -1,19 +1,24 @@
+.big-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 800px) {
+    height: 100vh;
+  }
+}
 .footer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background-color: $background-white;
   max-width: 1464px;
   width: 100%;
   min-height: 655px;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: $text-color;
+  @media (max-width: 800px) {
+    margin-top: 80px;
+  }
   &-container {
     max-width: 1264px;
     width: 100%;
@@ -21,14 +26,28 @@
     border-bottom: 1px solid #eceef5;
     display: flex;
     justify-content: space-between;
-
+    @media (max-width: 1300px) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    @media (max-width: 800px) {
+      margin-top: 40px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
     h2 {
       margin-bottom: 20px;
       font-weight: 600;
+      @media (max-width: 1300px) {
+        font-size: 20px;
+      }
     }
     p {
       font-weight: 500;
       font-size: 20px;
+      @media (max-width: 1300px) {
+        font-size: 16px;
+      }
     }
     li {
       font-weight: 500;
@@ -45,25 +64,34 @@
         color: $light-text-blue;
       }
     }
-
-    &-1 {
+    &-child-1 {
     }
-    &-2 {
+    &-child-2 {
       li:nth-child(2) {
         color: $light-text-blue;
       }
     }
-    &-3 {
+    &-child-3 {
+      @media (max-width: 800px) {
+        margin-top: 30px;
+      }
+      h2 {
+      }
     }
-    &-4 {
+    &-child-4 {
       display: flex;
       flex-direction: column;
+      @media (max-width: 800px) {
+        margin-top: 30px;
+        text-align: center;
+      }
       p {
         font-size: 20px;
         max-width: 424px;
         line-height: 31px;
         margin-bottom: 40px;
       }
+
       &-input-container {
         margin-bottom: 20px;
         position: relative;
@@ -97,6 +125,9 @@
         &:hover {
           background: linear-gradient(136.19deg, #6888f3 0, #8bcdff 90.01%);
         }
+        @media (max-width: 800px) {
+          margin-bottom: 20px;
+        }
       }
     }
   }
@@ -107,5 +138,14 @@
     justify-content: space-between;
     color: $gray-color;
     margin-top: 40px;
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+    p {
+      padding-left: 10px;
+    }
+    > p {
+      margin-bottom: 20px;
+    }
   }
 }

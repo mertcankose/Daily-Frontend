@@ -5,4 +5,32 @@
   border-radius: 10px;
   padding-left: 30px;
   padding-top: 35px;
+
+  select {
+    min-width: 186px;
+    min-height: 47px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    padding-left: 25px;
+    padding-right: 55px;
+    outline-color: #ccc;
+    margin-left: 15px;
+    color: #16132f;
+    appearance: none;
+  }
+  .custom-select {
+    display: inline-block;
+    position: relative;
+    .custom-arrow {
+      display: inline-block;
+      position: absolute;
+      right: 31px;
+      width: 14px;
+      height: 100%;
+      background-color: #000;
+      pointer-events: none;
+      mask: url(../../assets/arrow.svg) no-repeat center;
+    }
+  }
 }

@@ -1,5 +1,5 @@
 .feed-settings {
-  margin-top: 30px;
+  margin-top: 20px;
   max-width: 362px;
   min-height: 216px;
   background-color: #fff;
@@ -9,5 +9,149 @@
   &-1 {
     margin-top: 33px;
     margin-bottom: 20px;
+    max-width: 302px;
+    min-height: 35px;
+    display: flex;
+    justify-content: space-between;
+    &-checkboxes-1 {
+      .checkbox-input-1 {
+        display: inline-block;
+        margin-right: 10px;
+        .checkbox-1 {
+          width: 35px;
+          max-width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          background-color: #fff;
+          border: 1px solid #dddddd;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          transition: 300ms border;
+          .logo-cancel {
+            width: 14px;
+            height: 14px;
+            background-color: #202842;
+            mask: url(../../assets/cancel.svg) no-repeat center;
+            transition: 300ms background-color;
+          }
+        }
+        input {
+          display: none;
+          &:checked + .checkbox-1 {
+            border: 1px solid #eb3c3c;
+            .logo-cancel {
+              background-color: #ec0101;
+            }
+          }
+        }
+      }
+      .checkbox-input-2 {
+        display: inline-block;
+        margin-right: 10px;
+        .checkbox-2 {
+          width: 35px;
+          max-width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          background-color: #fff;
+          border: 1px solid #dddddd;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          transition: 300ms border;
+          .logo-tick {
+            width: 14px;
+            height: 14px;
+            background-color: #202842;
+            mask: url(../../assets/check.svg) no-repeat center;
+            transition: 300ms background-color;
+          }
+        }
+        input {
+          display: none;
+          &:checked + .checkbox-2 {
+            border: 1px solid #6dd187;
+            .logo-tick {
+              background-color: #6dd187;
+            }
+          }
+        }
+      }
+    }
+  }
+  &-2 {
+    max-width: 302px;
+    min-height: 35px;
+    display: flex;
+    justify-content: space-between;
+    .checkbox-input-3 {
+      display: inline-block;
+      margin-right: 10px;
+      .checkbox-3 {
+        width: 35px;
+        max-width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: #fff;
+        border: 1px solid #dddddd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: 300ms border;
+        .logo-cancel {
+          width: 14px;
+          height: 14px;
+          background-color: #202842;
+          mask: url(../../assets/cancel.svg) no-repeat center;
+          transition: 300ms background-color;
+        }
+      }
+      input {
+        display: none;
+        &:checked + .checkbox-3 {
+          border: 1px solid #eb3c3c;
+          .logo-cancel {
+            background-color: #ec0101;
+          }
+        }
+      }
+    }
+    .checkbox-input-4 {
+      display: inline-block;
+      margin-right: 10px;
+      .checkbox-4 {
+        width: 35px;
+        max-width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: #fff;
+        border: 1px solid #dddddd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: 300ms border;
+        .logo-tick {
+          width: 14px;
+          height: 14px;
+          background-color: #202842;
+          mask: url(../../assets/check.svg) no-repeat center;
+          transition: 300ms background-color;
+        }
+      }
+      input {
+        display: none;
+        &:checked + .checkbox-4 {
+          border: 1px solid #6dd187;
+          .logo-tick {
+            background-color: #6dd187;
+          }
+        }
+      }
+    }
   }
 }

@@ -6,29 +6,59 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css" />
     <!--GOOGLE FONT-->
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
       <div class="preffered-content">
         <label for="selectbox">Preferred content</label>
-        <select name="selectbox">
-          <option value="design">Design</option>
-          <option value="technology">Technology</option>
-          <option value="news">News</option>
-        </select>
+        <div class="custom-select">
+          <select name="selectbox" id="selectbox">
+            <option value="design">Design</option>
+            <option value="technology">Technology</option>
+            <option value="news">News</option>
+          </select>
+          <div class="custom-arrow"></div>
+        </div>
       </div>
       <div class="feed-settings">
         <h3>Feed Settings</h3>
         <div class="feed-settings-1">
-          <label>Show content suggestions</label>
-          <input type="checkbox" name="" id="" />
-          <input type="checkbox" name="" id="" />
+          <span>Show content suggestions</span>
+          <div class="feed-settings-1-checkboxes-1">
+            <label for="checkbox-1" class="checkbox-input-1">
+              <input type="checkbox" name="checkbox-1" id="checkbox-1" />
+              <span class="checkbox-1">
+                <div class="logo-cancel"></div>
+              </span>
+            </label>
+            <label for="checkbox-2" class="checkbox-input-2">
+              <input type="checkbox" name="checkbox-2" id="checkbox-2" />
+              <span class="checkbox-2">
+                <div class="logo-tick"></div>
+              </span>
+            </label>
+          </div>
         </div>
         <div class="feed-settings-2">
-          <label>Show tags and topics</label>
-          <input type="checkbox" name="" id="" />
-          <input type="checkbox" name="" id="" />
+          <span>Show tags and topics</span>
+          <div class="feed-settings-2-checkboxes-2">
+            <label for="checkbox-3" class="checkbox-input-3">
+              <input type="checkbox" name="checkbox-3" id="checkbox-3" />
+              <span class="checkbox-3">
+                <div class="logo-cancel"></div>
+              </span>
+            </label>
+            <label for="checkbox-4" class="checkbox-input-4">
+              <input type="checkbox" name="checkbox-4" id="checkbox-4" />
+              <span class="checkbox-4">
+                <div class="logo-tick"></div>
+              </span>
+            </label>
+          </div>
         </div>
       </div>
       <div class="try-version">
